@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/ativa_emprestimos</property>
+		<property name="connection.username">teste</property>
+		<property name="connection.password">mysql</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">2</property>
+		<!-- Enable Hibernate's current session context -->
+		<property name="current_session_context_class">thread</property>
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">create</property>
+
+		<mapping class="com.ativa.entidades.Contrato" />
+		<mapping class="com.ativa.entidades.Proposta" />
+		<mapping class="com.ativa.entidades.Contrato" />
+		<mapping class="com.ativa.entidades.PlanoEmprestimo" />
+		<mapping class="com.ativa.entidades.Contrato" />
+		<mapping class="com.ativa.entidades.Funcionario" />
+		<mapping class="com.ativa.entidades.Corretor" />
+		<mapping class="com.ativa.entidades.Endereco" />
+		<mapping class="com.ativa.entidades.Tomador" />
+		<mapping class="com.ativa.entidades.Empresa" />
+		<mapping class="com.ativa.entidades.Supervisor" />
+
+	</session-factory>
+</hibernate-configuration>

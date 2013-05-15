@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+                               "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+ <data-sources/>
+ <form-beans>
+  <form-bean name="buscaForm" type="prova.controle.form.BuscaForm"/>
+ </form-beans>
+ <global-exceptions/>
+ <global-forwards>
+  <forward name="produtos" path="/Produtos.do"/>
+  <forward name="exibirProdutos" path="/pages/frm_exibir_produtos.jsp"/>
+ </global-forwards>
+ <action-mappings>
+  <action name="buscaForm" path="/BuscaProdutos" scope="request" type="prova.controle.action.BuscaProdutoAction"/>
+  <action name="buscaForm" path="/Produtos" type="prova.controle.action.ExibeProdutosAction"/>
+  <action path="/DetalharProduto" type="prova.controle.action.DetalharProdutoAction">
+   <forward name="detalhar" path="/pages/frm_detalhe_produto.jsp"/>
+  </action>
+ </action-mappings>
+ <controller/>
+</struts-config>
