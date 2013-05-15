@@ -1,0 +1,20 @@
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	<h:head />
+	<h:body>
+		<h3>Login!</h3>
+
+		<h:form>
+        Nome
+        <h:inputText value="#{loginBean.nome}" />
+			<br />
+        Senha
+        <h:inputText value="#{loginBean.senha}"  />
+
+	    <h:commandButton action="#{loginBean.logar()}" value="logar" />
+		</h:form>
+
+	</h:body>
+</f:view>

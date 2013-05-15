@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#login#frm_login.jsp"
+  PATH="/pages/login/frm_login.jsp" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#login#frm_login.jsp:0" NAME="item"
+   PATH="/pages/login/frm_login.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="principal::#pages#principal#frm_principal.jsp" NAME="output"
+    PATH="/pages/principal/frm_principal.jsp"
+    TARGET="rules:#pages#principal#frm_principal.jsp" TITLE="principal" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#principal#frm_principal.jsp"
+  PATH="/pages/principal/frm_principal.jsp" SHAPE="240,33,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#principal#frm_principal.jsp:0"
+   NAME="item" PATH="/pages/principal/frm_principal.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="exibirMedicos::#pages#cadastro#frm_edita_medico.jsp"
+    NAME="output2" PATH="/pages/cadastro/frm_edita_medico.jsp"
+    TARGET="rules:#pages#cadastro#frm_edita_medico.jsp"
+    TITLE="exibirMedicos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="agendarConsulta::#pages#consulta#frm_agendamento_consulta.jsp"
+    NAME="output3" PATH="/pages/consulta/frm_agendamento_consulta.jsp"
+    TARGET="rules:#pages#consulta#frm_agendamento_consulta.jsp"
+    TITLE="agendarConsulta" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="cadastroPaciente::#pages#cadastro#frm_cadastro_paciente.jsp"
+    NAME="output4" PATH="/pages/cadastro/frm_cadastro_paciente.jsp"
+    TARGET="rules:#pages#cadastro#frm_cadastro_paciente.jsp"
+    TITLE="cadastroPaciente" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="atenderPaciente::#pages#consulta#frm_atendimento_consulta.jsp"
+    NAME="output5" PATH="/pages/consulta/frm_atendimento_consulta.jsp"
+    TARGET="rules:#pages#consulta#frm_atendimento_consulta.jsp"
+    TITLE="atenderPaciente" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#cadastro#frm_cadastro_atendente.jsp"
+  PATH="/pages/cadastro/frm_cadastro_atendente.jsp" SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#cadastro#frm_cadastro_medico.jsp"
+  PATH="/pages/cadastro/frm_cadastro_medico.jsp" SHAPE="256,289,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#cadastro#frm_edita_medico.jsp"
+  PATH="/pages/cadastro/frm_edita_medico.jsp" SHAPE="480,17,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#consulta#frm_agendamento_consulta.jsp"
+  PATH="/pages/consulta/frm_agendamento_consulta.jsp"
+  SHAPE="496,225,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#cadastro#frm_cadastro_paciente.jsp"
+  PATH="/pages/cadastro/frm_cadastro_paciente.jsp" SHAPE="512,257,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:" SHAPE="32,481,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules::0" NAME="item" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="exibirAtendentes::#pages#cadastro#frm_lista_atendentes.jsp"
+    NAME="output" PATH="/pages/cadastro/frm_lista_atendentes.jsp"
+    TARGET="rules:#pages#cadastro#frm_lista_atendentes.jsp"
+    TITLE="exibirAtendentes" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="exibirMedicos::#pages#cadastro#frm_edita_medico.jsp"
+    NAME="output1" PATH="/pages/cadastro/frm_edita_medico.jsp"
+    TARGET="rules:#pages#cadastro#frm_edita_medico.jsp"
+    TITLE="exibirMedicos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="agendarConsulta::#pages#consulta#frm_agendamento_consulta.jsp"
+    NAME="output2" PATH="/pages/consulta/frm_agendamento_consulta.jsp"
+    TARGET="rules:#pages#consulta#frm_agendamento_consulta.jsp"
+    TITLE="agendarConsulta" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="cadastroPaciente::#pages#cadastro#frm_cadastro_paciente.jsp"
+    NAME="output3" PATH="/pages/cadastro/frm_cadastro_paciente.jsp"
+    TARGET="rules:#pages#cadastro#frm_cadastro_paciente.jsp"
+    TITLE="cadastroPaciente" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="atenderPaciente::#pages#consulta#frm_atendimento_consulta.jsp"
+    NAME="output4" PATH="/pages/consulta/frm_atendimento_consulta.jsp"
+    TARGET="rules:#pages#consulta#frm_atendimento_consulta.jsp"
+    TITLE="atenderPaciente" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="cadastroAtendente::#pages#cadastro#frm_cadastro_atendente.jsp"
+    NAME="output5" PATH="/pages/cadastro/frm_cadastro_atendente.jsp"
+    TARGET="rules:#pages#cadastro#frm_cadastro_atendente.jsp"
+    TITLE="cadastroAtendente" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="cadastroMedico::#pages#cadastro#frm_cadastro_medico.jsp"
+    NAME="output6" PATH="/pages/cadastro/frm_cadastro_medico.jsp"
+    TARGET="rules:#pages#cadastro#frm_cadastro_medico.jsp"
+    TITLE="cadastroMedico" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="paginaPrincipal::#pages#principal#frm_principal.jsp"
+    NAME="output7" PATH="/pages/principal/frm_principal.jsp"
+    TARGET="rules:#pages#principal#frm_principal.jsp"
+    TITLE="paginaPrincipal" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="login::#pages#login#frm_login.jsp"
+    NAME="output8" PATH="/pages/login/frm_login.jsp"
+    TARGET="rules:#pages#login#frm_login.jsp" TITLE="login" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#consulta#frm_atendimento_consulta.jsp"
+  PATH="/pages/consulta/frm_atendimento_consulta.jsp"
+  SHAPE="528,289,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#cadastro#frm_lista_atendentes.jsp"
+  PATH="/pages/cadastro/frm_lista_atendentes.jsp" SHAPE="304,641,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

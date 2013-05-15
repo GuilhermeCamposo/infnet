@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="p1.modelo.entidades.Atendente">
+		
+		<id  column="matricula" type="integer"  >
+			<generator class="foreign">
+				<param name="property">funcionario</param>
+			</generator>
+		</id>
+
+		<!-- Propriedades da classe -->
+
+		<property name="turno" />
+
+
+    </class>
+
+</hibernate-mapping>

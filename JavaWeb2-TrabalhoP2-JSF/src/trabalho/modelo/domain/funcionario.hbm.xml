@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="trabalho.modelo.entidades">
+	<class name="Funcionario" table="funcionario">
+		<!-- Identificador da classe -->
+		<id name="matricula">
+			<generator class="identity" />
+		</id>
+
+		<!-- Propriedades da classe -->
+		<property generated="never" lazy="false" name="nome" />
+		<property generated="never" lazy="false" name="cpf" />
+		<property generated="never" lazy="false" name="senha" />
+		<property generated="never" lazy="false" name="login" />
+		<property generated="never" lazy="false" name="funcao" />
+
+		<joined-subclass name="Atendente">
+			<key column="matricula"></key>
+			<property generated="never" lazy="false" name="turno" />
+		</joined-subclass>
+
+		<joined-subclass name="Medico">
+			<key column="matricula"></key>
+			<property generated="never" lazy="false" name="especialidade" />
+		</joined-subclass>
+
+
+	</class>
+</hibernate-mapping>
